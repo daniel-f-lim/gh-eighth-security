@@ -13,7 +13,6 @@ jobs:
           # It will be treated as a string value in the environment
           TITLE: ${{ github.event.issue.title }}
         run: |
-          issue_title="${{ github.event.issue.title }}"
           if [[ "$TITLE" == *"bug"* ]]; then
           echo "Issue is about a bug!"
           else
